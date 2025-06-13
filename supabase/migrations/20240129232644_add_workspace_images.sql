@@ -18,7 +18,7 @@ DECLARE
   status INT;
   content TEXT;
 BEGIN
-  IF TG_OP = 'DELETE' THEN
+  IF TG_OP = 'DELETE' AND OLD.image_path != '' THEN
     SELECT
       INTO status, content
       result.status, result.content
