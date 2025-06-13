@@ -24,7 +24,7 @@ VALUES(
 
 -- Start data for assistants
 INSERT INTO assistants (user_id, name, description, model, image_path, sharing, context_length, include_profile_context, include_workspace_instructions, prompt, temperature, embeddings_provider) VALUES
-    ('e9fc7e46-a8a5-4fd4-8ba7-af485013e6fa', 'Conduit Assistant', 'This is an Conduit Assistant assistant.', 'deepseek-r1:8b', '', 'private', 4000, TRUE, TRUE, 'You are Albert Einstein.', 0.5, 'ollama');
+    ('e9fc7e46-a8a5-4fd4-8ba7-af485013e6fa', 'Conduit Assistant', 'This is an assistant with knowledge about documents uploaded by Conduit.', 'deepseek-r1:8b', '', 'private', 4000, TRUE, TRUE, 'You are an assistant with access to a knowledge base that''s continuously updated.', 0.5, 'ollama');
 
 -- Get assistant id
 DO $$
